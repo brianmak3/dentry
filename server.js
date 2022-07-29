@@ -4,7 +4,7 @@ const { manipulateSheet } = require('./src/utils');
 const express = require('express'),
     app = express(),
     http = require('http').Server(app),
-    port = 4000,
+    port = process.env.PORT || 4000,
     bodyParser = require('body-parser'),
     cors = require('cors');
 app.use(cors());
